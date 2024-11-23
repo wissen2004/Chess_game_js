@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Chess AI Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+    <style>
+        #board {
+            width: 500px;
+            margin: 20px auto;
+        }
+
+        #status {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        #game-mode {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #game-mode button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-mode">
+        <h2>Select Game Mode</h2>
+        <button id="human">Play Against Human</button>
+        <button id="computer">Play Against Computer</button>
+    </div>
+
+    <div id="board" style="display:none;"></div>
+    <div id="status" style="display:none;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
